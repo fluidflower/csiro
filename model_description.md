@@ -42,6 +42,18 @@ and
 
 * **Gas phase:** Approximated as pure CO2, with properties calculated using the Span and Wagner (1996) EOS.
 
+#### Solubility limit
+
+_Please provide the assumed solubility limit of CO2 in liquid phase at the tank bottom in kg/m<sup>3</sup>._
+
+### Temperature
+
+_Please provide the assumed temperature inside the computational domain in °C._
+
+### Domain volume
+
+_Please provide the assumed total volume of the computational domain in m<sup>3</sup>._
+
 ### Spatial parameters
 
 The parameters ![k, \phi, p_\text{entry}, \lambda, S_{lr}, S_{gr},  k_{lr}, k_{gr}, ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+k%2C+%5Cphi%2C+p_%5Ctext%7Bentry%7D%2C+%5Clambda%2C+S_%7Blr%7D%2C+S_%7Bgr%7D%2C++k_%7Blr%7D%2C+k_%7Bgr%7D%2C+) for the different facies are given in [spatial_parameters.csv](spatial_parameters.csv).
@@ -59,3 +71,15 @@ Newton with line search, ASM-preconditioned GMRES for the linear systems.
 ### Primary Variables
 
 Persistent set of primary variables comprising fluid pressure and total mole fraction of CO2 summed over all phases, with gas saturation calculated using a compositional flash see [MOOSE documentation](https://mooseframework.inl.gov/modules/porous_flow/persistent_variables.html) for details.
+
+### Computational Grid
+
+_Please provide the number and shape of grid elements._
+
+### Performance
+
+| Indicator                            |  Average |      Min |      Max |
+|:-------------------------------------|---------:|---------:|---------:|
+| time step size [s]                   | 1.23e+56 | 1.23e+56 | 1.23e+56 |
+| # nonlinear iterations per time step |      123 |      123 |      123 |
+| # linear iterations per solve        |      123 |      123 |      123 |
