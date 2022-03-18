@@ -44,15 +44,16 @@ and
 
 #### Solubility limit
 
-_Please provide the assumed solubility limit of CO2 in liquid phase at the tank bottom in kg/m<sup>3</sup>._
+CO2 solubility at base of tank 1.786 kg/m3 (0.001782 kg/kg)
 
 ### Temperature
 
-_Please provide the assumed temperature inside the computational domain in °C._
+20°C
 
 ### Domain volume
 
-_Please provide the assumed total volume of the computational domain in m<sup>3</sup>._
+The volume of the sand region (NOT including water region at top of tank) 0.0865 m3.
+The pore volume of the model is 0.0383 m3.
 
 ### Spatial parameters
 
@@ -66,7 +67,7 @@ Fully coupled, fully implicit, cell-centered FV.
 
 ### Linearization and Solvers
 
-Newton with line search, ASM-preconditioned GMRES for the linear systems.
+Newton with line search, direct solver (MUMPS) for the linear systems.
 
 ### Primary Variables
 
@@ -74,12 +75,22 @@ Persistent set of primary variables comprising fluid pressure and total mole fra
 
 ### Computational Grid
 
-_Please provide the number and shape of grid elements._
+Uniform structured grid of 149,533 quadrilateral elements (approx dimensions of each element is 5mm x 5mm).
 
 ### Performance
 
-| Indicator                            |  Average |      Min |      Max |
-|:-------------------------------------|---------:|---------:|---------:|
-| time step size [s]                   | 1.23e+56 | 1.23e+56 | 1.23e+56 |
-| # nonlinear iterations per time step |      123 |      123 |      123 |
-| # linear iterations per solve        |      123 |      123 |      123 |
+During the injection period (0 to 5 hours)
+
+| Indicator                            |  Average |      Min |      Max | Median |
+|:-------------------------------------|---------:|---------:|---------:|--------:|
+| time step size [s]                   | 1.96     | 0.0078125   |        2 | 2 |
+| # nonlinear iterations per time step |      3 |      1 |      15 | 3 |
+| # linear iterations per solve        |      3 |      1 |      15 | 3 |
+
+During the subsequent rest period (5 to 120 hours)
+
+| Indicator                            |  Average |      Min |      Max | Median |
+|:-------------------------------------|---------:|---------:|---------:|--------:|
+| time step size [s]                   | 35.92     | 0.15625   |        60 | 20 |
+| # nonlinear iterations per time step |      3 |      1 |      15 | 2 |
+| # linear iterations per solve        |      3 |      1 |      15 | 2 |
