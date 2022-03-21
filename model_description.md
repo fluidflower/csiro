@@ -75,7 +75,7 @@ Persistent set of primary variables comprising fluid pressure and total mole fra
 
 ### Computational Grid
 
-Uniform structured grid of 149,533 quadrilateral elements (approx dimensions of each element is 5mm x 5mm).
+Uniform structured grid of 44,284 quadrilateral elements (approx dimensions of each element is 10mm x 10mm).
 
 ### Performance
 
