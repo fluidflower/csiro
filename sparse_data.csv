@@ -4,7 +4,7 @@
 2, 1.900e4, 1.800e4,  1.700e4, 0, 0, 0 # time of max mobile free phase in Box A [s]
 3a, 1.650e-3, 1.500e-3, 1.350e-3, 0, 0, 0 # mobile free phase in Box A at 72h [kg]
 3b, 6.842e-6, 3.351e-6, 1.073e-6, 0, 0, 0 # immobile free phase in Box A at 72h [kg]
-3c, 2.150-3, 2.024e-3, 1.950-3, 0, 0, 0 # dissolved in water in Box A at 72h [kg]
+3c, 2.150e-3, 2.024e-3, 1.950e-3, 0, 0, 0 # dissolved in water in Box A at 72h [kg]
 3d, 7.200e-4, 6.434e-4, 5.500e-4, 0, 0, 0 # seal in Box A at 72h [kg]
 4a, 1.000e-7, 0.0, 0.0, 0, 0, 0 # mobile free phase in Box B at 72h [kg]
 4b, 1.000e-7, 0.0, 0.0, 0, 0, 0 # immobile free phase in Box B at 72h [kg]
