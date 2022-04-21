@@ -85,7 +85,7 @@ During the injection period (0 to 5 hours)
 |:-------------------------------------|---------:|---------:|---------:|--------:|
 | time step size [s]                   | 1.96     | 0.0078125   |        2 | 2 |
 | # nonlinear iterations per time step |      3 |      1 |      15 | 3 |
-| # linear iterations per solve        |      3 |      1 |      15 | 3 |
+| # linear iterations per solve        |      1 |      1 |      1 | 1 |
 
 During the subsequent rest period (5 to 120 hours)
 
@@ -93,4 +93,4 @@ During the subsequent rest period (5 to 120 hours)
 |:-------------------------------------|---------:|---------:|---------:|--------:|
 | time step size [s]                   | 35.92     | 0.15625   |        60 | 20 |
 | # nonlinear iterations per time step |      3 |      1 |      15 | 2 |
-| # linear iterations per solve        |      3 |      1 |      15 | 2 |
+| # linear iterations per solve        |      1 |      1 |      1 | 1 |
